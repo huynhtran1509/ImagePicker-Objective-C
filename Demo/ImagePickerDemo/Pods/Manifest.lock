@@ -1,0 +1,16 @@
+PODS:
+  - ImagePicker-Objective-C (0.0.1)
+
+DEPENDENCIES:
+  - ImagePicker-Objective-C (from `../../`)
+
+EXTERNAL SOURCES:
+  ImagePicker-Objective-C:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  ImagePicker-Objective-C: ddc1f693788f08d3d53d4afd531723feec116df3
+
+PODFILE CHECKSUM: b0ccf2f7acf7fec72c76745593dcaf2c008f7a96
+
+COCOAPODS: 1.0.1
