@@ -123,7 +123,12 @@ CGFloat const kTopViewHeight = 34.f;
     return _rotateCamera;
 }
 
-
+- (NSArray *)flashButtonTitles {
+    if (!_flashButtonTitles) {
+        _flashButtonTitles = @[@"AUTO", @"ON", @"OFF"];
+    }
+    return _flashButtonTitles;
+}
 
 
 @end

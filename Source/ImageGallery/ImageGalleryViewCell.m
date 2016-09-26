@@ -21,7 +21,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        for (UIImageView *view in @[self.selectedImageView, self.imageView]) {
+        for (UIImageView *view in @[self.imageView, self.selectedImageView]) {
             view.contentMode = UIViewContentModeScaleAspectFill;
             view.translatesAutoresizingMaskIntoConstraints = NO;
             view.clipsToBounds = YES;

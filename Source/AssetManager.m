@@ -18,8 +18,8 @@
     if (bundlePath) {
         bundle = [NSBundle bundleWithPath:bundlePath];
     }
-    
-    return [UIImage imageNamed:name inBundle:bundle compatibleWithTraitCollection:traitCollection];
+    UIImage *image = [UIImage imageNamed:name inBundle:bundle compatibleWithTraitCollection:traitCollection];
+    return image;
 }
 
 + (void)fetchWithCompletion:(void (^)(NSArray<PHAsset *> *assets))completion {

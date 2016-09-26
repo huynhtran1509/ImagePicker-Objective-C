@@ -138,10 +138,10 @@ static CGFloat const kVelocity = 100.f;
 
 - (void)checkStatus {
     PHAuthorizationStatus currentStatus = [PHPhotoLibrary authorizationStatus];
-    if (currentStatus != PHAuthorizationStatusAuthorized) {
+    if (currentStatus == PHAuthorizationStatusAuthorized) {
         return;
     }
-    if (currentStatus == PHAuthorizationStatusNotDetermined) {
+    if (currentStatus != PHAuthorizationStatusNotDetermined) {
         [self hideViews];
     }
     
